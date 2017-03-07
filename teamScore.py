@@ -19,6 +19,8 @@ challengeCount = {}
 #Read through the rubric file. Read in each challenge
 for line in rubricFile:
     words = line.strip().split()
+    if len(words) != 2:
+        continue
     challenges[words[0]] = words[1]
     challengeCount[words[0]] = 0
 #Ensure there is a file called token.txt in the same directory as the script
