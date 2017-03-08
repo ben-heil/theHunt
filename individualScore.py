@@ -57,6 +57,6 @@ for item in response["feed"]["data"]:
                         playerScores[player] += int(challenges[challenge])
 
 #Print each player's score
+print("Player:\tScore:\n")
 for player in playerScores:
     print(player + '\t' + str(playerScores[player]))
-    print("")
